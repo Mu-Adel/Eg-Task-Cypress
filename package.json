@@ -1,0 +1,24 @@
+{
+  "name": "eg-task",
+  "version": "1.0.0",
+  "description": "Automation task for EasyGenerator",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:server": "node server.js",
+    "cy:open": "start npm run start:server && start cypress open --e2e --browser=chrome",
+    "cy:run": "start npm run start:server && start cypress run --e2e --browser=chrome",
+    "format": "prettier --write ."
+  },
+  "author": "Muhammad Adel",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "2.1.5",
+    "cypress": "12.2.0",
+    "esbuild": "0.16.5",
+    "prettier": "2.8.4"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.7.6"
+  }
+}
